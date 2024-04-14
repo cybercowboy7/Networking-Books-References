@@ -1,2 +1,15 @@
 TCP/IP Illustrated Volume 1: 
 https://www.r-5.org/files/books/computers/internals/net/Richard_Stevens-TCP-IP_Illustrated-EN.pdf
+
+NOTES:
+Chapter One:
+- There are 3 types of IP addresses. The type affects how forwarding is performed
+  - Unicast: Destined for a single host
+  - Broadcast: Destined for all hosts on a given network
+  - Multicast: Destined for a set of hosts that belong to a multicast group
+- ICMP is used by the IP layer to exchange error messages with the IP layer in
+another host or router
+  - Ping and traceroute utilize ICMP
+  - ICMP messages are encapsulated within IP datagrams in the same way
+transport layer PDUs are 
+PAGE 54 left off
